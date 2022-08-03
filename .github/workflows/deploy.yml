@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - main
+      - zos-support-8
 jobs:
   deploy:
     runs-on: ubuntu-latest
