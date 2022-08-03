@@ -13,6 +13,7 @@ jobs:
       run: |
         sudo apt-get update -y
         sudo apt-get upgrade -y
+        sudo chmod +x contrib/download_prerequisites
         ./contrib/download_prerequisites
         echo "prerequisits done"
         git clone https://github.com/LukasJaks/gcc-zos.git
