@@ -20,7 +20,7 @@ jobs:
         echo "prerequisits done"
         chmod +x configure
         echo "done"
-        ./configure
+        ./configure --disable-multilib
         echo "configure done"
         make
         echo "make done"
