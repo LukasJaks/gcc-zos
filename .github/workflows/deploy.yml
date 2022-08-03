@@ -1,0 +1,16 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: wget remote website
+      run: |
+        git clone https://github.com/LukasJaks/gcc-zos.git
+        cd gcc-zos
+        chmod +x configure
+        ./configure
