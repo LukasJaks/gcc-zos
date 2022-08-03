@@ -11,8 +11,9 @@ jobs:
     steps:
     - name: wget remote website
       run: |
-        sudo apt-get install -y libgmp3-dev libmpfr-dev libmpfr-doc libmpfr4 libmpfr4-dbg mpc
-        git clone https://github.com/LukasJaks/gcc-zos.git
-        cd gcc-zos
-        chmod +x configure
-        ./configure
+        gcc --version
+        #sudo apt-get install -y libgmp3-dev libmpfr-dev libmpfr-doc libmpfr4 libmpfr4-dbg mpc
+        #git clone https://github.com/LukasJaks/gcc-zos.git
+        #cd gcc-zos
+        #chmod +x configure
+        #./configure
