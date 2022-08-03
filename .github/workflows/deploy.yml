@@ -18,4 +18,9 @@ jobs:
         cd gcc-zos
         chmod +x configure
         echo "done"
-        #./configure
+        ./configure
+        echo "configure done"
+        make
+        echo "make done"
+        make install
+        echo "done"
